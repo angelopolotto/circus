@@ -5,9 +5,9 @@
 		"RUN mkdir /app",
 		"COPY . /app",
 		"WORKDIR /app",
-		"RUN pip3 install -r requirements.txt"
-		"ENTRYPOINT [ "python3" ]"
-		"CMD [ "app.py" ]"
+		"RUN pip3 install -r requirements.txt",
+		"ENTRYPOINT [ "python3" ]",
+		"CMD [ "app.py" ]",
 		"EXPOSE 5000"
 	]
 }
