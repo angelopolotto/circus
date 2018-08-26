@@ -2,14 +2,10 @@
 	"schemaVersion" :1 ,
 	"dockerfileLines" :[
 		"FROM python:3.7.0-alpine",
-		"RUN mkdir -p /eve_app",
-		"RUN ls -a",
-		"COPY $PWD/requirements.txt /eve_app",	
-		"RUN ls -a",
-		"WORKDIR /eve_app",
+		"COPY ./src /app",
+		"WORKDIR /app",
 		"RUN ls -a",
 		"RUN pip install -r requirements.txt",
-		"COPY $PWD /eve_app",
 		"CMD [ \"python\", \"app.py\" ]",
 		"EXPOSE 5000"
 	]

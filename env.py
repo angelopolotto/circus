@@ -5,10 +5,10 @@ PORT = int(os.environ.get('PORT', 5000))
 # network (and not only your computer).
 HOST = os.environ.get('HOST', '127.0.0.1')
 
-URL_DB = 'localhost'
-PORT_DB = 27017 
+URL_DB = 'srv-captain--circusdb'
+PORT_DB = 27017
 USER_DB = 'admin'
-PASS_DB = '12345'
+PASS_DB = '35VaBRVG36423kYVqFDTnHVX'
 NAME_DB = 'admin'
 
 MONGO_URI = os.environ.get('MONGODB_URI',
