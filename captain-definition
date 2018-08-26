@@ -9,8 +9,8 @@
 		"COPY ./requirements.txt /eve_app",	
 		"RUN ls -a",
 		"RUN pip install -r requirements.txt",
-		"COPY . /eve_app"
-		"CMD [ \"python\", \"app.py\" ]"
+		"COPY . /eve_app",
+		"CMD [ \"python\", \"app.py\" ]",
 		"EXPOSE 5000"
 	]
 }
